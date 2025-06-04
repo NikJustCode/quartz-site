@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кварцвинил</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <section class="benefits">
+            <h2 class="section-title">ПЛЮСЫ КВАРЦВИНИЛА</h2>
+            
+            <div class="swiper benefits-swiper">
+                <div class="swiper-wrapper" id="benefits-wrapper">
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/wearResistance.png" alt="Износостойкость">
+                            <h3>ИЗНОСОСТОЙКОСТЬ</h3>
+                            <p>Обладает исключительной износостойкостью с защитным слоем толщиной 0,3-0,55 мм, который принимает на себя все внешние воздействия, сохраняя декоративный слой в сохранности на весь срок службы покрытия</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/ecologi.png" alt="Экологичность">
+                            <h3>ЭКОЛОГИЧНОСТЬ</h3>
+                            <p>Напольные покрытия не выделяют летучих органических соединений, не нагреваются и не содержат токсичных и канцерогенных веществ</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/realistic.png" alt="Реалистичность">
+                            <h3>РЕАЛИСТИЧНОСТЬ</h3>
+                            <p>Декоративный слой, созданный в качестве HD и эффективная текстура на поверхности создает ощущение структуры внутреннего образца породы древесины, камня, травертина, гранита, мрамора и других поверхностей</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/soundInsulation.png" alt="Звукоизоляция">
+                            <h3>ЗВУКОИЗОЛЯЦИЯ</h3>
+                            <p>Хорошо гасит ударный шум и создает акустический комфорт в вашем интерьере без создания эффекта эха. В ассортименте есть плитка с дополнительной звукоизоляцией подложкой</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/simplicity.png" alt="Простота монтажа">
+                            <h3>ПРОСТОТА МОНТАЖА</h3>
+                            <p>Легко монтируется на пол отопления с фанерным или наливным основанием с помощью нанесения расходных материалов и рекомендованной технологии укладки. Нормально функционирует в диапазоне температур от -15 до +27 С в жилой зоне</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <img src="./img/thermalConductivity.png" alt="Теплопроводность">
+                            <h3>ТЕПЛОПРОВОДНОСТЬ</h3>
+                            <p>Ощущается как комфортное покрытие без эффекта холодный пол. Можно использовать вместе с системами подогрева «тёплый пол»</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div class="add-form">
+                <h3>Добавить новое преимущество</h3>
+                <div id="notification-add" class="notification notification-success">
+                    Преимущество успешно добавлено!
+                </div>
+                <div id="notification-reset" class="notification notification-warning">
+                    Данные успешно сброшены!
+                </div>
+                <form id="add-benefit-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="title">Заголовок:</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Описание:</label>
+                        <textarea id="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Изображение:</label>
+                        <input type="file" id="image" accept="image/*" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit">Добавить</button>
+                        <button type="button" id="reset-data" class="reset-button">Сбросить данные</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="services-header">
+                <h2 class="section-title">НАШИ УСЛУГИ</h2>
+                <div class="services-navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
+            <div class="services-swiper">
+                <div class="swiper-wrapper" id="services-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./img/laying.png" alt="Укладка напольных покрытий">
+                            <h3>УКЛАДКА НАПОЛЬНЫХ ПОКРЫТИЙ</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./img/lift.png" alt="ПОДЪЁМ НА ЭТАЖ">
+                            <h3>ПОДЪЁМ НА ЭТАЖ</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-card">
+                            <img src="./img/samples.png" alt="ПОКАЖЕМ ОБРАЗЦЫ">
+                            <h3>ПОКАЖЕМ ОБРАЗЦЫ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

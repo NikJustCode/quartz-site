@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+}
+
+.benefits {
+    margin-bottom: 50px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.benefits-swiper {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.benefit-card {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.benefit-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.benefit-card h3 {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.benefit-card p {
+    padding: 0 15px 15px;
+    color: #666;
+    font-size: 14px;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.services {
+    margin-bottom: 50px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.services-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.services-navigation .swiper-button-prev,
+.services-navigation .swiper-button-next {
+    position: static;
+    margin-top: 0;
+}
+
+.services-swiper {
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.service-card h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+
+.add-form {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.add-form h3 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+    margin: 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+    margin: 0;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev:after {
+    content: '<';
+}
+
+.swiper-button-next:after {
+    content: '>';
+}
+
+.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
+
+.notification {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: white;
+    display: none;
+    animation: fadeIn 0.3s, fadeOut 0.5s 3s forwards;
+    box-sizing: border-box;
+}
+
+.notification-success {
+    background-color: #4CAF50;
+}
+
+.notification-warning {
+    background-color: #ff9800;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.highlight {
+    animation: highlight 1s;
+}
+
+@keyframes highlight {
+    0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+@media (min-width: 1200px) {
+    .benefits-swiper,
+    .services-swiper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1820px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 690px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .services-navigation .swiper-button-prev,
+    .services-navigation .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .benefit-card h3,
+    .service-card h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 690px) {
+    .container {
+        max-width: 328px;
+        padding: 10px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .benefits,
+    .services {
+        padding: 15px;
+    }
+    
+    .services-swiper .swiper-wrapper {
+        display: block;
+    }
+    
+    .services-swiper .swiper-slide {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .services-navigation {
+        display: none;
+    }
+    
+    .service-card {
+        height: 150px;
+    }
+    
+    .benefit-card img,
+    .service-card img {
+        height: 150px;
+    }
+    
+    .benefit-card h3,
+    .service-card h3 {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .add-form {
+        padding: 15px;
+    }
+} 
