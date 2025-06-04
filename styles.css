@@ -87,6 +87,10 @@ h1, h2, h3, p {
     box-sizing: border-box;
 }
 
+.advantages-title {
+    padding-bottom: 20px;
+}
+
 .services {
     margin-bottom: 50px;
     background-color: #FFFFFF;
